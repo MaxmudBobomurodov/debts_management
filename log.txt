@@ -1,0 +1,2 @@
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
