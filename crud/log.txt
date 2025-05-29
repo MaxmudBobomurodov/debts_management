@@ -10,3 +10,39 @@ Traceback (most recent call last):
     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
 psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
 
+ERROR:core.database_settings:Error while executing the query connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 54, in execute_query
+    with DatabaseManager() as db:
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 19, in __enter__
+    self.conn = psycopg2.connect(**DB_CONFIG)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+
+ERROR:core.database_settings:Error while executing the query connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 54, in execute_query
+    with DatabaseManager() as db:
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 19, in __enter__
+    self.conn = psycopg2.connect(**DB_CONFIG)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+
+ERROR:core.database_settings:Error while executing the query connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 54, in execute_query
+    with DatabaseManager() as db:
+         ~~~~~~~~~~~~~~~^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 19, in __enter__
+    self.conn = psycopg2.connect(**DB_CONFIG)
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  role "user" does not exist
+

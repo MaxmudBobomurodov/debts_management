@@ -403,3 +403,283 @@ Traceback (most recent call last):
 psycopg2.errors.DuplicateTable: relation "users" already exists
 
 INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+ERROR:core.database_settings:Error while executing the query relation "users" already exists
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+ERROR:core.database_settings:Error while executing the query relation "users" already exists
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "not payed"
+LINE 1: UPDATE debts SET status = 'not payed' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Error while executing the query invalid input syntax for type boolean: "not payed"
+LINE 1: UPDATE debts SET status = 'not payed' WHERE id = 4;
+                                  ^
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "not payed"
+LINE 1: UPDATE debts SET status = 'not payed' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Error while executing the query invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "debts" violates foreign key constraint "debts_to_user_fkey"
+DETAIL:  Key (to_user)=(0) is not present in table "users".
+
+ERROR:core.database_settings:Error while executing the query insert or update on table "debts" violates foreign key constraint "debts_to_user_fkey"
+DETAIL:  Key (to_user)=(0) is not present in table "users".
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "debts" violates foreign key constraint "debts_to_user_fkey"
+DETAIL:  Key (to_user)=(0) is not present in table "users".
+
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+ERROR:core.database_settings:Error while executing the query relation "users" already exists
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Error while executing the query invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "payed"
+LINE 1: UPDATE debts SET status = 'payed' WHERE id = 4;
+                                  ^
+
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+ERROR:core.database_settings:Error while executing the query relation "users" already exists
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.DuplicateTable: relation "users" already exists
+
+INFO:core.database_settings:Successfully executed
+INFO:core.database_settings:Successfully executed
+ERROR:core.database_settings:Transaction failed
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "paid"
+LINE 1: UPDATE debts SET status = 'paid' WHERE id = 4;
+                                  ^
+
+ERROR:core.database_settings:Error while executing the query invalid input syntax for type boolean: "paid"
+LINE 1: UPDATE debts SET status = 'paid' WHERE id = 4;
+                                  ^
+Traceback (most recent call last):
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 60, in execute_query
+    db.execute(query=query, params=params)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\core\database_settings.py", line 38, in execute
+    self.cursor.execute(query, params)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\user\PycharmProjects\debts_management_max\.venv\Lib\site-packages\psycopg2\extras.py", line 146, in execute
+    return super().execute(query, vars)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type boolean: "paid"
+LINE 1: UPDATE debts SET status = 'paid' WHERE id = 4;
+                                  ^
+
+INFO:core.database_settings:Successfully executed

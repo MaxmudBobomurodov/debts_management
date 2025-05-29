@@ -1,6 +1,6 @@
 from core.table_queries import initializing_table
 from crud.login import register, login
-from crud.debt_functions import give_debt,view_lest_of_debts, view_total_debts_given, show_all_users
+from crud.debt_functions import give_debt,view_lest_of_debts, view_total_debts_given, show_all_users , update_status
 
 
 
@@ -30,7 +30,7 @@ def main_menu():
                 status = "not payed"
             print(f"id: {i['id']}\nfrom_user: {i['from_user']}\nto_user: {i["to_user"]}\nquantity: {i["quantity"]}\nstatus: {status}\ncreated_at: {i['created_at']}")
     elif choice == "4":
-        pass
+        update_status()
     elif choice == "5":
         users = show_all_users()
         if users:

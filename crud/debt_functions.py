@@ -30,3 +30,25 @@ def view_total_debts_given():
 def show_all_users():
     query = "SELECT * FROM users;"
     return execute_query(query,fetch="all")
+
+def update_status():
+    try:
+        debts_id = int(input("Enter debt ID: "))
+    except ValueError:
+        print("Invalid ID. Please enter a number.")
+        return
+
+    status = input("Did you pay (yes/no): ").strip().lower()
+    if status == "yes":
+        s = True
+    elif status == "no":
+        s = False
+    else:
+        print("Invalid input. Please enter 'yes' or 'no'.")
+        return
+
+    query = "UPDATE debts SET status = %s WHERE id = %s;"
+    execute_query(query, (s, debts_id))
+    print("Status updated successfully.")
+
+update_status()
