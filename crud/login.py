@@ -20,9 +20,9 @@ def register():
     print("Registered successfully")
 
 def login():
-    username = input("Enter your username: ")
+    username = input("Enter your username: ").strip()
     password = input("Enter your password: ")
-    user = execute_query("SELECT FROM users WHERE USERNAME=%s AND PASSWORD=%s", (username,password), fetch="one")
+    user = execute_query("SELECT * FROM users WHERE USERNAME=%s AND PASSWORD=%s", (username,password), fetch="one")
     if user:
         print(f"Welcome {user['name']}")
         return True

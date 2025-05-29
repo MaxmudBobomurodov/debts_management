@@ -1,35 +1,44 @@
 from core.table_queries import initializing_table
 from crud.login import register, login
+from crud.debt_functions import give_debt,view_lest_of_debts, view_total_debts_given, show_all_users
+
+
+
 def main_menu():
     print("""Menu:
     1.give debts
-    2.take debts
-    3.view total debts given
-    4.view total debts taken
-    5.view list of debts given
-    6.view list of debts taken
-    7.update debts
-    8.show all users
-    9.exit
+    2.view total debts given
+    3.view list of debts given
+    4.update debts
+    5.show all users
+    6.exit
     """)
     choice = input("Enter your choice: ")
     if choice == "1":
-        pass
+        give_debt()
     elif choice == "2":
-        pass
+        view_total_debts_given()
     elif choice == "3":
-        pass
+        debts = view_lest_of_debts()
+        if not debts:
+            print("No debts")
+
+        for i in debts:
+            if i['status']:
+                status = "payed"
+            else:
+                status = "not payed"
+            print(f"id: {i['id']}\nfrom_user: {i['from_user']}\nto_user: {i["to_user"]}\nquantity: {i["quantity"]}\nstatus: {status}\ncreated_at: {i['created_at']}")
     elif choice == "4":
         pass
     elif choice == "5":
-        pass
+        users = show_all_users()
+        if users:
+            for user in users:
+                print(f"id: {user['id']}; name: {user['name']},username: {user['username']}")
+        else:
+            print("No users found!")
     elif choice == "6":
-        pass
-    elif choice == "7":
-        pass
-    elif choice == "8":
-        pass
-    elif choice == "9":
         auth_menu()
     else:
         print("Invalid choice")
@@ -56,7 +65,8 @@ def auth_menu():
         return
     else:
         print("Invalid choice")
-    auth_menu()
+
+    return auth_menu()
 
 
 if __name__ == '__main__':
